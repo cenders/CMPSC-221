@@ -1,0 +1,21 @@
+Welcome to the Trip Calculator!
+How many trips did you take? 3
+
+Trip #1
+Miles traveled: 10
+Gallons used: 5
+MPG: 2
+
+Trip #2
+Miles traveled: 20
+Gallons used: 5
+MPG: 4
+
+Trip #3
+Miles traveled: 30
+Gallons used: 5
+MPG: 6
+
+Total miles traveled: 60
+Total gallons used: 15
+Total MPG: 4

@@ -1,0 +1,12 @@
+Welcome to the Body Mass Index Calculator!
+Please enter your weight and height.
+Weight: 180
+Height: 72
+
+You have a BMI of 24.
+
+Here is a list of BMI Values:
+Underweight: less than 18.5
+Normal:      between 18.5 and 24.9
+Overweight:  between 25 and 29.9
+Obese:       30 or greater

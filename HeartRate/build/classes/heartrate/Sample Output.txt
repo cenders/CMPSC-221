@@ -1,0 +1,13 @@
+Welcome to the Target-Heart-Rate Calculator!
+Please input the following information:
+First name: Collin
+Last name: Enders
+Birth day: 6
+Birth month: 7
+Birth year: 1996
+
+
+Name: Collin Enders
+DOB: 6/7/1996
+Maximum heart rate: 220 BPM
+Target heart rate: 110.0 - 187.0 BPM
