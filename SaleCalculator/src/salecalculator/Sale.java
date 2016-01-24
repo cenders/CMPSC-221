@@ -1,28 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package salecalculator;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Collin
+ * CMPSC 221 Program #4
+ * Sale.java
+ * Purpose: Contains methods to perform sales
+ * 
+ * @author Collin Enders
  */
 public class Sale {
     
-    Scanner input = new Scanner(System.in);
-    final int EXIT_VALUE = -999;
-    int in;
-    double totalCost = 0.0;
     
-    double getTotalCost(){
+    
+    Scanner input = new Scanner(System.in); // Declare scanner object
+    
+    public final int EXIT_VALUE = -999; // Delimiter value
+    private int in; // Input variable
+    private double totalCost = 0.0; // Variable to store total cost
+    
+    double getTotalCost(){ // Get function for the total cost
         return totalCost;
     }
     
-    void listPrices(){
+    void listPrices(){ // Print out prices
         System.out.println("Here's a list of prices:");
         System.out.println("Product 1: $2.98");
         System.out.println("Product 2: $4.50");
@@ -31,29 +33,39 @@ public class Sale {
         System.out.println("Product 5: $6.87");
     }
     
-    void doSales(){
-        while (in != EXIT_VALUE){
-            System.out.println("Please enter a product to buy:");
+    void doSales(){ // Perform all sales
+        while (in != EXIT_VALUE){ // Perform this while the delimiter value is not input
+            System.out.print("Please enter a product to buy: ");
             in = input.nextInt();
-            switch(in){
-                case 1:
-                    totalCost = totalCost + 2.98;
+            switch(in){ // Start switch for products to buy
+                case 1: // Product #1
+                    System.out.print("Quantity: ");
+                    in = input.nextInt();
+                    totalCost = totalCost + 2.98 * in; // Add 2.98 to total cost
                     break;
-                case 2:
-                    totalCost = totalCost + 4.50;
+                case 2: // Product #2
+                    System.out.print("Quantity: ");
+                    in = input.nextInt();
+                    totalCost = totalCost + 4.50 * in; // Add 4.50 to total cost
                     break;
-                case 3:
-                    totalCost = totalCost + 9.98;
+                case 3: // Product #3
+                    System.out.print("Quantity: ");
+                    in = input.nextInt();
+                    totalCost = totalCost + 9.98 * in; // Add 9.98 to total cost
                     break;
-                case 4:
-                    totalCost = totalCost + 4.49;
+                case 4: // Product #4
+                    System.out.print("Quantity: ");
+                    in = input.nextInt();
+                    totalCost = totalCost + 4.49 * in; // Add 4.49 to total cost
                     break;
-                case 5:
-                    totalCost = totalCost + 6.87;
+                case 5: // Product #5
+                    System.out.print("Quantity: ");
+                    in = input.nextInt();
+                    totalCost = totalCost + 6.87 * in; // Add 6.87 to total cost
                     break;
-                case EXIT_VALUE:
+                case EXIT_VALUE: // If delimiter value is used
                     break;
-                default:
+                default: // In case a product or delimiter is not used
                     System.out.println("Please enter a valid product number or -999 to stop shopping");
                     break;
             }

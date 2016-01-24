@@ -1,27 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package salecalculator;
 
-import java.util.Scanner;
-
 /**
- * CMPSC 221 Program #1
+ * 
+ * CMPSC 221 Program #4
  * SaleCalculator.java
- * Purpose: 
+ * Purpose: Let customer pick out products to buy and list total price
  * 
  * @author Collin Enders
  */
 public class SaleCalculator {
 
     public static void main(String[] args) {
-        Sale customer = new Sale();
+        Sale customer = new Sale(); // Declare new sale object
         
-        customer.listPrices();
-        customer.doSales();
-        System.out.println("Your total is: " + customer.getTotalCost());
+        customer.listPrices(); // List prices of each product
+        customer.doSales(); // Let customer buy products
+        
+        System.out.print("Your total is: "); 
+        System.out.format("%.2f", customer.getTotalCost());// Print out total cost of products
     }
     
 }
