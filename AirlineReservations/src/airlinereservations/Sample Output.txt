@@ -1,0 +1,7 @@
+Welcome! What class seat would you like for your flight?
+Please enter 1 for first-class or 2 for economy seating: 2
+Here is your ticket:
+|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
+|************* Seat Number: 6 ******************|
+|************* Section:Economy *****************|
+|_______________________________________________|
